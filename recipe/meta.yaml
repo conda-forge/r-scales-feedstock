@@ -1,4 +1,4 @@
-{% set version = '0.4.1' %}
+{% set version = '0.5.0' %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,7 +12,7 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/scales_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/scales/scales_{{ version }}.tar.gz
-  sha256: 642b88fb1fce7bac72a0038ce532b65b8a79dffe826fec25033cf386ab630cd3
+  sha256: dbfcc0817c4ab8b8777ec7d68ebfe220177c193cfb5bd0e8ba5d365dbfe3e97d
 
 build:
   number: 0
@@ -26,11 +26,13 @@ requirements:
   build:
     - r-base
     - r-rcolorbrewer
-    - r-rcpp
     - r-dichromat
-    - r-labeling
     - r-munsell >=0.2
     - r-plyr
+    - r-labeling
+    - r-rcpp
+    - r-r6
+    - r-viridislite
     - posix                # [win]
     - {{native}}toolchain  # [win]
     - gcc                  # [not win]
@@ -38,11 +40,13 @@ requirements:
   run:
     - r-base
     - r-rcolorbrewer
-    - r-rcpp
     - r-dichromat
-    - r-labeling
     - r-munsell >=0.2
     - r-plyr
+    - r-labeling
+    - r-rcpp
+    - r-r6
+    - r-viridislite
     - libgcc               # [not win]
 
 test:
