@@ -15,7 +15,8 @@ source:
   sha256: dbfcc0817c4ab8b8777ec7d68ebfe220177c193cfb5bd0e8ba5d365dbfe3e97d
 
 build:
-  number: 0
+  merge_build_host: True  # [win]
+  number: 1
   skip: true  # [win32]
 
   rpaths:
@@ -24,6 +25,12 @@ build:
 
 requirements:
   build:
+    - posix                # [win]
+    - {{ compiler('c') }}        # [unix]
+    - {{ compiler('m2w64_c') }}  # [win]
+    - {{ compiler('cxx') }}        # [unix]
+    - {{ compiler('m2w64_cxx') }}  # [win]
+  host:
     - r-base
     - r-rcolorbrewer
     - r-dichromat
@@ -33,9 +40,6 @@ requirements:
     - r-rcpp
     - r-r6
     - r-viridislite
-    - posix                # [win]
-    - {{native}}toolchain  # [win]
-    - gcc                  # [not win]
 
   run:
     - r-base
@@ -47,7 +51,6 @@ requirements:
     - r-rcpp
     - r-r6
     - r-viridislite
-    - libgcc               # [not win]
 
 test:
   commands:
