@@ -14,14 +14,16 @@ Summary: Graphical scales map data to aesthetics, and provide methods for automa
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/r-scales-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/r-scales-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/r-scales-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/r-scales-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/r-scales-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/r-scales-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-scales-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-scales-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/r-scales-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-scales-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-scales-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-scales-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-scales/badges/version.svg)](https://anaconda.org/conda-forge/r-scales)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-scales/badges/downloads.svg)](https://anaconda.org/conda-forge/r-scales)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-r--scales-green.svg)](https://anaconda.org/conda-forge/r-scales) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/r-scales.svg)](https://anaconda.org/conda-forge/r-scales) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/r-scales.svg)](https://anaconda.org/conda-forge/r-scales) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/r-scales.svg)](https://anaconda.org/conda-forge/r-scales) |
 
 Installing r-scales
 ===================
