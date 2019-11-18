@@ -1,4 +1,4 @@
-{% set version = '1.0.0' %}
+{% set version = "1.1.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -11,11 +11,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/scales_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/scales/scales_{{ version }}.tar.gz
-  sha256: 0c1f4a14edd336a404da34a3cc71a6a9d0ca2040ba19360c41a79f36e06ca30c
+  sha256: 1ee4a6fd1dbc5f52fe57dd8cce8caee4ce2fecb02d4e7d519e83f15aa45b2d03
 
 build:
   merge_build_host: True  # [win]
-  number: 1002
+  number: 0
   skip: true  # [win32]
   rpaths:
     - lib/R/lib/
@@ -58,6 +58,7 @@ test:
 about:
   home: https://scales.r-lib.org, https://github.com/r-lib/scales
   license: MIT
+  license_file: LICENSE
   summary: Graphical scales map data to aesthetics, and provide methods for automatically determining
     breaks and labels for axes and legends.
   license_family: MIT
