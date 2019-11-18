@@ -49,7 +49,9 @@ test:
 about:
   home: https://scales.r-lib.org, https://github.com/r-lib/scales
   license: MIT
-  license_file: LICENSE
+  license_file:
+    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - LICENSE
   summary: Graphical scales map data to aesthetics, and provide methods for automatically determining
     breaks and labels for axes and legends.
   license_family: MIT
