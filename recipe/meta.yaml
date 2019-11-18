@@ -16,36 +16,27 @@ source:
 build:
   merge_build_host: True  # [win]
   number: 0
-  skip: true  # [win32]
+  noarch: generic
   rpaths:
     - lib/R/lib/
     - lib/
 
 requirements:
-  build:
-    - {{ compiler('c') }}        # [not win]
-    - {{ compiler('cxx') }}      # [not win]
-    - {{ compiler('m2w64_c') }}        # [win]
-    - {{ compiler('m2w64_cxx') }}        # [win]
-    - {{posix}}filesystem        # [win]
-    - {{posix}}make
-    - {{posix}}sed               # [win]
-    - {{posix}}coreutils         # [win]
-    - {{posix}}zip               # [win]
   host:
     - r-base
+    - r-farver >=2.0.0
     - r-r6
     - r-rcolorbrewer
-    - r-rcpp
+    - r-lifecycle
     - r-labeling
     - r-munsell >=0.5
     - r-viridislite
   run:
     - r-base
-    - {{native}}gcc-libs         # [win]
+    - r-farver >=2.0.0
     - r-r6
     - r-rcolorbrewer
-    - r-rcpp
+    - r-lifecycle
     - r-labeling
     - r-munsell >=0.5
     - r-viridislite
