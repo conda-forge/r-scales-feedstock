@@ -1,4 +1,4 @@
-{% set version = "1.2.0" %}
+{% set version = "1.2.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -11,7 +11,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/scales_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/scales/scales_{{ version }}.tar.gz
-  sha256: 185d50240e6b3e84d36ec7fbca6aef7a85db7c8c1b0dde51d4af28d363ce02df
+  sha256: 59453e6dbdafee93dfb101e4d86048a62a12898134259d3ef02d65aeec57ed08
 
 build:
   merge_build_host: true  # [win]
