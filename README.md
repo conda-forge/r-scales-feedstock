@@ -1,11 +1,11 @@
-About r-scales
-==============
+About r-scales-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-scales-feedstock/blob/main/LICENSE.txt)
 
 Home: https://scales.r-lib.org, https://github.com/r-lib/scales
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-scales-feedstock/blob/main/LICENSE.txt)
 
 Summary: Graphical scales map data to aesthetics, and provide methods for automatically determining breaks and labels for axes and legends.
 
